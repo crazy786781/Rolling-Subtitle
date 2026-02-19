@@ -32,6 +32,7 @@ fe-fix.txt
 cleanup_only.sh
 clear_repo_and_cleanup.bat
 上传到GitHub.bat
+同步到GitHub.bat
 GITHUB_上传说明.md
 
 # 非核心文档与脚本（不上传）
