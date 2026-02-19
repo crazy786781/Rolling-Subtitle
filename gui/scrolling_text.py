@@ -135,12 +135,15 @@ class _ScrollingTextMixin:
                 logger.warning(f"加载PIL字体时出错: {e}，使用默认字体")
                 pil_font = ImageFont.load_default()
             bbox = temp_draw.textbbox((0, 0), text, font=pil_font)
-            text_width = bbox[2] - bbox[0] + 20
-            text_height = bbox[3] - bbox[1] + 20
+            font_size = self.config.gui_config.font_size
+            pad_h = max(20, int(font_size * 0.6))
+            pad_v = max(20, int(font_size * 0.5))
+            text_width = bbox[2] - bbox[0] + pad_h
+            text_height = bbox[3] - bbox[1] + pad_v
             img = Image.new('RGBA', (text_width, text_height), (0, 0, 0, 0))
             draw = ImageDraw.Draw(img)
             rgb = (color.red(), color.green(), color.blue())
-            draw.text((10, 10), text, fill=rgb, font=pil_font)
+            draw.text((pad_h // 2, pad_v // 2), text, fill=rgb, font=pil_font)
             img_bytes = img.tobytes("raw", "RGBA")
             qimg = QImage(img_bytes, text_width, text_height, QImage.Format_RGBA8888)
             pixmap = QPixmap.fromImage(qimg)

@@ -93,9 +93,11 @@ def cst_to_display(cst_time_str: str) -> str:
         s = cst_time_str.strip()
         cst = ZoneInfo("Asia/Shanghai")
         formats = [
+            "%Y-%m-%d %H:%M:%S.%f",
             "%Y-%m-%d %H:%M:%S",
             "%Y/%m/%d %H:%M:%S",
             "%Y-%m-%dT%H:%M:%S",
+            "%Y-%m-%dT%H:%M:%S.%f",
             "%Y%m%d%H%M%S",
             "%Y%m%d%H%M",
         ]
@@ -108,8 +110,7 @@ def cst_to_display(cst_time_str: str) -> str:
                 continue
         if dt is None:
             return cst_time_str
-        if dt.tzinfo is None:
-            dt = dt.replace(tzinfo=cst)
+        dt = dt.replace(tzinfo=cst)
         display_dt = dt.astimezone(get_display_zone())
         return display_dt.strftime("%Y-%m-%d %H:%M:%S")
     except Exception:

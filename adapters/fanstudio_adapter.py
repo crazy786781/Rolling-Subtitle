@@ -405,9 +405,9 @@ class FanStudioAdapter(BaseAdapter):
         event_id = data.get('eventId', data.get('id', ''))
         info_type = data.get('infoTypeName', '')
         
-        # 格式化时间
+        # 格式化时间（FanStudio 速报均为 UTC+8，转为显示时区）
         if shock_time:
-            shock_time = self.format_time(shock_time)
+            shock_time = timezone_utils.cst_to_display(shock_time)
         
         # 获取机构名称：如果适配器类型是 'all'，使用实际的 source_type
         if self.data_source_type == 'all':
@@ -497,7 +497,8 @@ class FanStudioAdapter(BaseAdapter):
             if source_type == 'jma':
                 shock_time = timezone_utils.jst_to_display(shock_time)
             else:
-                shock_time = self.format_time(shock_time)
+                # 非 JMA 数据源为 UTC+8，转为显示时区
+                shock_time = timezone_utils.cst_to_display(shock_time)
         
         # 获取强度信息（不同数据源字段名不同）
         intensity = data.get('epiIntensity') or data.get('maxIntensity') or ''
