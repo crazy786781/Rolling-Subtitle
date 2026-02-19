@@ -1,8 +1,8 @@
-# 地震预警及情报实况栏程序
+地震预警及情报实况栏程序
 
 一个用于显示地震预警及情报实况栏的Python应用程序，支持多个WebSocket数据源。
 
-## 功能特性
+功能特性
 
 - 📺 滚动字幕显示地震预警和速报信息
 - 🔌 支持多个WebSocket数据源
@@ -10,34 +10,34 @@
 - ⚙️ 灵活的配置管理
 - 📝 完整的日志记录
 
-## 支持的数据源
+支持的数据源
 
-### WebSocket数据源
-1. **EQMonitor** (`wss://websocket.api.eqmonitor.app/ws`)
+WebSocket数据源
+1. **Wolfx防灾** (`wss://ws-api.wolfx.jp/all_eew`)
 2. **NIED** (`wss://sismotide.top/nied`)
 3. **Fan Studio** (`wss://ws.fanstudio.tech/all`)
 
-## 安装依赖
+安装依赖
 
 ```bash
 pip install websockets requests
 ```
 
-## 使用方法
+使用方法
 
-### 运行程序
+运行程序
 
 ```bash
 python main.py
 ```
 
-### 配置文件
+配置文件
 
 配置文件位置：`C:\Users\账户名\AppData\Roaming\subtitl\settings.json`
 
 程序首次运行时会自动创建配置目录和配置文件。
 
-## 项目结构
+项目结构
 
 ```
 滚动字幕/
@@ -49,7 +49,7 @@ python main.py
 │   └── message_manager.py     # 消息管理
 ├── adapters/                  # 数据源适配器
 │   ├── base_adapter.py
-│   ├── eqm_adapter.py
+│   ├── wolfx_adapter.py
 │   ├── nied_adapter.py
 │   └── fanstudio_adapter.py
 ├── data_sources/              # 数据源管理
@@ -59,7 +59,7 @@ python main.py
     └── message_processor.py
 ```
 
-## 配置说明
+配置说明
 
 详细配置说明请参考：
 - `配置文件路径说明.md` - 配置文件路径说明
@@ -67,6 +67,6 @@ python main.py
 - `移除Wolfx说明.md` - Wolfx数据源移除说明
 - `移除认证模块说明.md` - 认证模块移除说明
 
-## 许可证
+许可证
 
-本项目采用 [MIT License](LICENSE) 开源协议。
+本项目采用 [GNU GPLv3](LICENSE) 开源协议（因使用 PyQt5 等 GPL 组件，遵循 Copyleft 要求）。
