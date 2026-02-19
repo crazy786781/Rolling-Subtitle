@@ -1,0 +1,4062 @@
+
+                21:38:09 - 系统
+                欢迎使用 WebSocket 数据查询工具！请在上方输入 WebSocket 服务器地址并点击"连接"按钮开始使用。
+            
+
+
+                21:38:26 - 系统
+                成功连接到 wss://ws.fanstudio.tech/all
+            
+
+
+                21:38:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212306148
+}
+            
+
+
+                21:38:26 - 服务器
+                {
+  "type": "initial_all",
+  "weatheralarm": {
+    "Data": {
+      "id": "45080041600000_20260204212539",
+      "headline": "广西壮族自治区贵港市发布大雾黄色预警信号",
+      "effective": "2026/02/04 21:25",
+      "description": "贵港市气象台2026年2月4日21时14分发布港北区、港南区、覃塘区大雾黄色预警信号：预计未来12小时内贵港市港北区、港南区、覃塘区将出现能见度小于500米的雾，请做好防范。",
+      "longitude": 109.6087,
+      "latitude": 23.0913,
+      "type": "p0005003",
+      "title": "广西壮族自治区贵港市发布大雾黄色预警信号"
+    },
+    "md5": "088d5049098f4087f02bce9db638dcd8"
+  },
+  "tsunami": {
+    "Data": {},
+    "md5": "99914b932bd37a50b983c5e7c90ae93b"
+  },
+  "cenc": {
+    "Data": {
+      "id": 4192318,
+      "eventId": "CD.20260204192318.503",
+      "shockTime": "2026-02-04 19:23:18",
+      "createTime": "2026-02-04 19:30:56",
+      "latitude": 40.73,
+      "longitude": 78.38,
+      "depth": 10,
+      "magnitude": 3.1,
+      "placeName": "新疆克孜勒苏州阿合奇县",
+      "infoTypeName": "[正式测定]"
+    },
+    "md5": "219db7d48bd1cba17e06e93bf434946c"
+  },
+  "cea": {
+    "Data": {
+      "id": "bz64oejdp1oyb",
+      "eventId": "202601280732.0001",
+      "shockTime": "2026-01-28 07:33:12",
+      "longitude": 74.684,
+      "latitude": 38.832,
+      "placeName": "新疆克孜勒苏州阿克陶县",
+      "magnitude": 4,
+      "epiIntensity": 5.1,
+      "depth": 20,
+      "updates": 1
+    },
+    "md5": "a22afceb9a6d32cb41c1a02c9985b5c1"
+  },
+  "cea-pr": {
+    "Data": {
+      "id": "babg6dm5b1oyy",
+      "eventId": "202602041739.0001",
+      "shockTime": "2026-02-04 17:39:23",
+      "longitude": 103.621,
+      "latitude": 31.245,
+      "placeName": "四川成都市都江堰市",
+      "magnitude": 3.4,
+      "epiIntensity": 4.9,
+      "depth": 13,
+      "updates": 1,
+      "province": "青海"
+    },
+    "md5": "4387993936177a8df25b67ac7a4b8713"
+  },
+  "sichuan": {
+    "Data": {
+      "id": 8124,
+      "eventId": "202601261456.0001_2",
+      "updates": 2,
+      "shockTime": "2026-01-26 14:56:00",
+      "longitude": 103.267,
+      "latitude": 34.06,
+      "placeName": "甘肃甘南州迭部县",
+      "magnitude": 5.8,
+      "createTime": "2026-01-26 14:56:06",
+      "epiIntensity": 7.8,
+      "infoTypeName": "正式",
+      "producer": "SC"
+    },
+    "md5": "02faaa9fbc8858a421cf7023efa08e70"
+  },
+  "ningxia": {
+    "Data": {
+      "id": "2013013948615536642",
+      "title": "2026年01月19日06时11分宁夏银川市金凤区发生2.0级地震",
+      "latitude": 38.4247,
+      "longitude": 106.173,
+      "depth": 16,
+      "placeName": "宁夏银川市金凤区",
+      "shockTime": "2026-01-19 06:11:17",
+      "magnitude": 2
+    },
+    "md5": "1eb92313516ecedffaf8767577126935"
+  },
+  "guangxi": {
+    "Data": {
+      "shockTime": "2025-12-14 17:23:43",
+      "longitude": 107,
+      "latitude": 24.99,
+      "placeName": "广西河池市天峨县八腊瑶族乡",
+      "magnitude": 2,
+      "depth": 10
+    },
+    "md5": "9ff166964b49946bbaf26024526132eb"
+  },
+  "shanxi": {
+    "Data": {
+      "shockTime": "2026-02-02 12:05:41",
+      "longitude": 112.52,
+      "latitude": 39.02,
+      "placeName": "山西原平",
+      "magnitude": 0.3,
+      "depth": 25
+    },
+    "md5": "8956eb22f8fe96f47e5880c2f76684df"
+  },
+  "beijing": {
+    "Data": {
+      "eventId": "CC20260204163627",
+      "shockTime": "2026-02-04 16:18:52.0",
+      "longitude": 117.39,
+      "latitude": 40.15,
+      "placeName": "天津蓟州区",
+      "magnitude": 2,
+      "depth": 5
+    },
+    "md5": "5971bd243fc877e7d9e390af6468465a"
+  },
+  "cwa": {
+    "Data": {
+      "id": "115000",
+      "shockTime": "2026-02-03 09:42:10",
+      "latitude": 24.33,
+      "longitude": 121.6,
+      "depth": 22.1,
+      "magnitude": 3.2,
+      "placeName": "花蓮縣政府北方  37.3  公里 (位於花蓮縣秀林鄉)",
+      "maxIntensity": "2級",
+      "imageURI": "https://scweb.cwa.gov.tw/webdata/OLDEQ/202602/2026020309421032_H.png",
+      "shakemapURI": null
+    },
+    "md5": "02980f6f2e64c4590f9870f8c58e5c3c"
+  },
+  "cwa-eew": {
+    "Data": {
+      "id": "1150011",
+      "updates": 4,
+      "shockTime": "2026-01-27 02:48:42",
+      "latitude": 22,
+      "longitude": 120.97,
+      "depth": 10,
+      "magnitude": 4.8,
+      "placeName": "屏東縣恆春鎮 外海 (正東14.1km)",
+      "locationDesc": [
+        "屏東縣",
+        "臺東縣"
+      ]
+    },
+    "md5": "7f2f3d3b8d265f18c374180afb81d1d2"
+  },
+  "jma": {
+    "Data": {
+      "id": "20260204172712",
+      "updates": 3,
+      "shockTime": "2026-02-04 17:27:01",
+      "createTime": "2026-02-04 17:27:57",
+      "latitude": 37.8,
+      "longitude": 141.7,
+      "depth": 70,
+      "magnitude": 3.4,
+      "placeName": "福島県沖",
+      "epiIntensity": "2",
+      "infoTypeName": "予報",
+      "final": true,
+      "cancel": false
+    },
+    "md5": "06010513afe001d23178f7a3d2ca021e"
+  },
+  "hko": {
+    "Data": {
+      "id": "20260204103924_S1213772060",
+      "eventId": "20260204103924_S1213772060",
+      "shockTime": "2026-02-04 18:39:00",
+      "longitude": -178.39,
+      "latitude": -29.74,
+      "depth": 140,
+      "magnitude": 6,
+      "placeName": "努庫阿洛法, 湯加群島",
+      "citystring": "努庫阿洛法西南偏南約1010公里, 震源深度 140 公里",
+      "region": "新西蘭克馬德克群島",
+      "verify": "Y"
+    },
+    "md5": "8fb44fce5cf8cd8a87fdd07405c14be1"
+  },
+  "usgs": {
+    "Data": {
+      "id": "6000s6e2",
+      "title": "M 4.7 - 4 km SSE of Recodo, Philippines",
+      "infoTypeName": "reviewed",
+      "magnitude": 4.7,
+      "placeName": "4 km SSE of Recodo, Philippines",
+      "shockTime": "2026-02-04 21:14:48",
+      "updateTime": "2026-02-04 21:35:42",
+      "longitude": 123.7533,
+      "latitude": 11.9113,
+      "depth": 10,
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000s6e2"
+    },
+    "md5": "ab248aa211e25f8509b266c402b53044"
+  },
+  "sa": {
+    "Data": {
+      "id": "ew1770044470",
+      "shockTime": "2026-02-02 23:01:14",
+      "latitude": 37.7598,
+      "longitude": -121.9355,
+      "depth": 9,
+      "magnitude": 4.2,
+      "placeName": "4 km SE of San Ramon, CA"
+    },
+    "md5": "a0f78eb70a02ef2aa14aac6d39b28fd5"
+  },
+  "emsc": {
+    "Data": {
+      "id": "20260204_0000183",
+      "shockTime": "2026-02-04 21:14:48",
+      "latitude": 11.9113,
+      "longitude": 123.7533,
+      "depth": 10,
+      "magnitude": 4.7,
+      "placeName": "VISAYAN SEA, PHILIPPINES"
+    },
+    "md5": "b0c04622548af6de45597d54a692c66e"
+  },
+  "bcsf": {
+    "Data": {
+      "id": "fr2026sztisw",
+      "shockTime": "2026-02-04 20:24:50",
+      "latitude": 44.95851898,
+      "longitude": 3.959297895,
+      "depth": null,
+      "magnitude": 2.082216176,
+      "placeName": "Quarry blast of magnitude 2.1, near of Le Puy-en-Velay (France hexagonale)"
+    },
+    "md5": "791b26f12f1908ea985fd69388e1ae9c"
+  },
+  "gfz": {
+    "Data": {
+      "id": "gfz2026ckzd",
+      "shockTime": "2026-02-04 19:08:21",
+      "latitude": 2.571,
+      "longitude": -95.295,
+      "depth": 10,
+      "magnitude": 4.89,
+      "placeName": "Galapagos Islands Region"
+    },
+    "md5": "85ed6ce64cc41162e1c7bc7196f71ed6"
+  },
+  "usp": {
+    "Data": {
+      "id": "usp2026ckzd",
+      "shockTime": "2026-02-04 19:08:22",
+      "latitude": 2.7453529834747314,
+      "longitude": -94.8675765991211,
+      "depth": 10,
+      "magnitude": 4.338051635165179,
+      "placeName": "Galapagos Islands Region"
+    },
+    "md5": "8bf4b9595c25badbd21fef7e29b08bae"
+  },
+  "kma": {
+    "Data": {
+      "id": "KMA.20260131163600",
+      "shockTime": "2026-01-31 16:36:00",
+      "createTime": "2026-01-31 16:40:00",
+      "latitude": 33.25,
+      "longitude": 127.38,
+      "depth": null,
+      "magnitude": 2,
+      "epiIntensity": 1,
+      "placeName": "제주 서귀포시 동쪽 76km 해역"
+    },
+    "md5": "cb20d70b1bf4b43e1a3a19ceb23b3f12"
+  },
+  "kma-eew": {
+    "Data": {
+      "id": "2021007178",
+      "shockTime": "2021-12-14 17:19:16",
+      "createTime": "2021-12-14 17:20:27",
+      "latitude": 33.15,
+      "longitude": 126.24,
+      "magnitude": 5.3,
+      "depth": 0,
+      "epiIntensity": 6,
+      "placeName": "제주 서귀포시 서남서쪽 32km 해역",
+      "affectedAreas": [
+        "제주"
+      ]
+    },
+    "md5": "0fdfeb1217769119061ef1aac8000bb9"
+  },
+  "fssn": {
+    "Data": {
+      "id": "FSSN2026clav",
+      "shockTime": "2026-02-04 19:59:31",
+      "createTime": "2026-02-04 20:02:01",
+      "latitude": -21.3446,
+      "longitude": -69.7873,
+      "depth": 28.781911849976,
+      "magnitude": 3.5,
+      "placeName": "Northern Chile",
+      "placeName_zh": "智利北部",
+      "infoTypeName": "正式(已核实)"
+    },
+    "md5": "3d8216a4fe1f495ebea4190f4f9e29f7"
+  }
+}
+            
+
+
+                21:38:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212336149
+}
+            
+
+
+                21:39:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212366158
+}
+            
+
+
+                21:39:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212396159
+}
+            
+
+
+                21:40:05 - 服务器
+                {
+  "type": "update",
+  "source": "weatheralarm",
+  "Data": {
+    "id": "42120041600000_20260204213112",
+    "headline": "湖北省咸宁市发布大雾黄色预警信号",
+    "effective": "2026/02/04 21:31",
+    "description": "咸宁市气象台2026年02月04日21时31分发布大雾黄色预警信号：预计今天夜间到明天早上通城可能出现能见度小于500米的雾，请注意防范。",
+    "longitude": 114.3245,
+    "latitude": 29.8229,
+    "type": "p0005003",
+    "title": "湖北省咸宁市发布大雾黄色预警信号"
+  },
+  "md5": "8d6e5d00a2ec643cd851c1ea5c26f92c"
+}
+            
+
+
+                21:40:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212426159
+}
+            
+
+
+                21:40:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212456160
+}
+            
+
+
+                21:41:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212486160
+}
+            
+
+
+                21:41:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212516160
+}
+            
+
+
+                21:42:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212546161
+}
+            
+
+
+                21:42:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212576161
+}
+            
+
+
+                21:43:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212606161
+}
+            
+
+
+                21:43:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212636162
+}
+            
+
+
+                21:44:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212666161
+}
+            
+
+
+                21:44:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212696163
+}
+            
+
+
+                21:45:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212726163
+}
+            
+
+
+                21:45:33 - 服务器
+                {
+  "type": "update",
+  "source": "gfz",
+  "Data": {
+    "id": "gfz2026cldi",
+    "shockTime": "2026-02-04 21:14:47",
+    "latitude": 12.049,
+    "longitude": 124.012,
+    "depth": 10,
+    "magnitude": 4.63,
+    "placeName": "Samar, Philippines"
+  },
+  "md5": "4e36ce281445e3378e1a8447cba48b2a"
+}
+            
+
+
+                21:45:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212756164
+}
+            
+
+
+                21:46:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212786164
+}
+            
+
+
+                21:46:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212816165
+}
+            
+
+
+                21:47:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212846166
+}
+            
+
+
+                21:47:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212876167
+}
+            
+
+
+                21:48:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212906177
+}
+            
+
+
+                21:48:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212936177
+}
+            
+
+
+                21:49:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212966178
+}
+            
+
+
+                21:49:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770212996179
+}
+            
+
+
+                21:50:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213026177
+}
+            
+
+
+                21:50:46 - 服务器
+                {
+  "type": "update",
+  "source": "usgs",
+  "Data": {
+    "id": "2026clmdog",
+    "title": "M 2.8 - 12 km NNE of Cantwell, Alaska",
+    "infoTypeName": "automatic",
+    "magnitude": 2.8,
+    "placeName": "12 km NNE of Cantwell, Alaska",
+    "shockTime": "2026-02-04 21:48:10",
+    "updateTime": "2026-02-04 21:50:23",
+    "longitude": -148.875,
+    "latitude": 63.499,
+    "depth": 0,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak2026clmdog"
+  },
+  "md5": "92f44b22b67856be0de5720c61672f63"
+}
+            
+
+
+                21:50:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213056179
+}
+            
+
+
+                21:51:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213086180
+}
+            
+
+
+                21:51:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213116179
+}
+            
+
+
+                21:52:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213146179
+}
+            
+
+
+                21:52:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213176180
+}
+            
+
+
+                21:53:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213206180
+}
+            
+
+
+                21:53:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213236183
+}
+            
+
+
+                21:54:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213266183
+}
+            
+
+
+                21:54:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213296267
+}
+            
+
+
+                21:55:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213326268
+}
+            
+
+
+                21:55:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213356269
+}
+            
+
+
+                21:56:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213386268
+}
+            
+
+
+                21:56:29 - 服务器
+                {
+  "type": "update",
+  "source": "emsc",
+  "Data": {
+    "id": "20260204_0000185",
+    "shockTime": "2026-02-04 21:45:55",
+    "latitude": -8.74,
+    "longitude": 119.14,
+    "depth": 97,
+    "magnitude": 2.8,
+    "placeName": "FLORES REGION, INDONESIA"
+  },
+  "md5": "e6b5c14561f115fa6b8299d098873681"
+}
+            
+
+
+                21:56:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213416268
+}
+            
+
+
+                21:57:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213446268
+}
+            
+
+
+                21:57:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213476267
+}
+            
+
+
+                21:58:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213506270
+}
+            
+
+
+                21:58:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213536269
+}
+            
+
+
+                21:59:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213566269
+}
+            
+
+
+                21:59:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213596269
+}
+            
+
+
+                22:00:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213626270
+}
+            
+
+
+                22:00:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213656270
+}
+            
+
+
+                22:01:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213686272
+}
+            
+
+
+                22:01:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213716273
+}
+            
+
+
+                22:02:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213746274
+}
+            
+
+
+                22:02:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213776276
+}
+            
+
+
+                22:03:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213806276
+}
+            
+
+
+                22:03:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213836278
+}
+            
+
+
+                22:04:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213866279
+}
+            
+
+
+                22:04:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213896280
+}
+            
+
+
+                22:05:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213926281
+}
+            
+
+
+                22:05:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213956281
+}
+            
+
+
+                22:06:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770213986281
+}
+            
+
+
+                22:06:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214016282
+}
+            
+
+
+                22:07:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214046282
+}
+            
+
+
+                22:07:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214076282
+}
+            
+
+
+                22:08:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214106282
+}
+            
+
+
+                22:08:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214136282
+}
+            
+
+
+                22:09:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214166283
+}
+            
+
+
+                22:09:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214196283
+}
+            
+
+
+                22:10:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214226284
+}
+            
+
+
+                22:10:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214256283
+}
+            
+
+
+                22:11:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214286285
+}
+            
+
+
+                22:11:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214316285
+}
+            
+
+
+                22:12:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214346286
+}
+            
+
+
+                22:12:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214376286
+}
+            
+
+
+                22:13:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214406285
+}
+            
+
+
+                22:13:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214436285
+}
+            
+
+
+                22:14:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214466287
+}
+            
+
+
+                22:14:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214496287
+}
+            
+
+
+                22:15:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214526288
+}
+            
+
+
+                22:15:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214556438
+}
+            
+
+
+                22:16:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214586440
+}
+            
+
+
+                22:16:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214616440
+}
+            
+
+
+                22:17:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214646440
+}
+            
+
+
+                22:17:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214676441
+}
+            
+
+
+                22:18:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214706442
+}
+            
+
+
+                22:18:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214736441
+}
+            
+
+
+                22:19:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214766441
+}
+            
+
+
+                22:19:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214796485
+}
+            
+
+
+                22:20:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214826510
+}
+            
+
+
+                22:20:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214856536
+}
+            
+
+
+                22:21:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214886583
+}
+            
+
+
+                22:21:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214916583
+}
+            
+
+
+                22:22:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214946619
+}
+            
+
+
+                22:22:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770214976619
+}
+            
+
+
+                22:23:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215006643
+}
+            
+
+
+                22:23:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215036644
+}
+            
+
+
+                22:24:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215066644
+}
+            
+
+
+                22:24:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215096662
+}
+            
+
+
+                22:25:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215126692
+}
+            
+
+
+                22:25:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215156693
+}
+            
+
+
+                22:26:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215186699
+}
+            
+
+
+                22:26:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215216700
+}
+            
+
+
+                22:27:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215246701
+}
+            
+
+
+                22:27:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215276702
+}
+            
+
+
+                22:28:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215306701
+}
+            
+
+
+                22:28:34 - 服务器
+                {
+  "type": "update",
+  "source": "emsc",
+  "Data": {
+    "id": "20260204_0000193",
+    "shockTime": "2026-02-04 22:21:43",
+    "latitude": 4.19,
+    "longitude": 97.49,
+    "depth": 10,
+    "magnitude": 2.8,
+    "placeName": "NORTHERN SUMATRA, INDONESIA"
+  },
+  "md5": "72b54e9a6d0cb287be255f46c8534675"
+}
+            
+
+
+                22:28:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215336705
+}
+            
+
+
+                22:29:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215366707
+}
+            
+
+
+                22:29:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215396730
+}
+            
+
+
+                22:30:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215426730
+}
+            
+
+
+                22:30:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215456731
+}
+            
+
+
+                22:31:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215486740
+}
+            
+
+
+                22:31:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215516746
+}
+            
+
+
+                22:32:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215546770
+}
+            
+
+
+                22:32:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215576770
+}
+            
+
+
+                22:33:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215606771
+}
+            
+
+
+                22:33:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215636771
+}
+            
+
+
+                22:34:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215666771
+}
+            
+
+
+                22:34:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215696779
+}
+            
+
+
+                22:35:11 - 服务器
+                {
+  "type": "update",
+  "source": "emsc",
+  "Data": {
+    "id": "20260204_0000194",
+    "shockTime": "2026-02-04 22:32:21",
+    "latitude": -35.287,
+    "longitude": 179.4803,
+    "depth": 243,
+    "magnitude": 3.5,
+    "placeName": "OFF E. COAST OF N. ISLAND, N.Z."
+  },
+  "md5": "9065a4530a24394d620409954426c231"
+}
+            
+
+
+                22:35:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215726780
+}
+            
+
+
+                22:35:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215756828
+}
+            
+
+
+                22:36:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215786828
+}
+            
+
+
+                22:36:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215816828
+}
+            
+
+
+                22:37:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215846828
+}
+            
+
+
+                22:37:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215876828
+}
+            
+
+
+                22:38:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215906828
+}
+            
+
+
+                22:38:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215936934
+}
+            
+
+
+                22:39:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215966935
+}
+            
+
+
+                22:39:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770215996935
+}
+            
+
+
+                22:40:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216026935
+}
+            
+
+
+                22:40:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216056954
+}
+            
+
+
+                22:41:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216086955
+}
+            
+
+
+                22:41:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216116971
+}
+            
+
+
+                22:42:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216146972
+}
+            
+
+
+                22:42:53 - 服务器
+                {
+  "type": "update",
+  "source": "bcsf",
+  "Data": {
+    "id": "fr2026sztsyt",
+    "shockTime": "2026-02-04 22:20:03",
+    "latitude": 48.57443619,
+    "longitude": 8.219026566,
+    "depth": null,
+    "magnitude": 1.557501353,
+    "placeName": "Quarry blast of magnitude 1.6, near of Strasbourg (Monde)"
+  },
+  "md5": "7376b2dac6001442d34733088e30761f"
+}
+            
+
+
+                22:42:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216176973
+}
+            
+
+
+                22:43:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216206989
+}
+            
+
+
+                22:43:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216236989
+}
+            
+
+
+                22:44:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216267003
+}
+            
+
+
+                22:44:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216297003
+}
+            
+
+
+                22:45:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216327004
+}
+            
+
+
+                22:45:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216357005
+}
+            
+
+
+                22:46:23 - 服务器
+                {
+  "type": "update",
+  "source": "bcsf",
+  "Data": {
+    "id": "fr2026sztsyt",
+    "shockTime": "2026-02-04 22:20:03",
+    "latitude": 48.57267761,
+    "longitude": 8.214385986,
+    "depth": null,
+    "magnitude": 1.499749702,
+    "placeName": "Quarry blast of magnitude 1.5, near of Strasbourg (Monde)"
+  },
+  "md5": "0b5f6c550e7ae3791437005c1c2f46af"
+}
+            
+
+
+                22:46:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216387028
+}
+            
+
+
+                22:46:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216417029
+}
+            
+
+
+                22:47:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216447033
+}
+            
+
+
+                22:47:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216477034
+}
+            
+
+
+                22:48:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216507033
+}
+            
+
+
+                22:48:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216537033
+}
+            
+
+
+                22:49:26 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216567033
+}
+            
+
+
+                22:49:56 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216597033
+}
+            
+
+
+                22:50:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216627122
+}
+            
+
+
+                22:50:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216657191
+}
+            
+
+
+                22:51:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216687235
+}
+            
+
+
+                22:51:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216717234
+}
+            
+
+
+                22:52:03 - 服务器
+                {
+  "type": "update",
+  "source": "emsc",
+  "Data": {
+    "id": "20260204_0000198",
+    "shockTime": "2026-02-04 22:41:42",
+    "latitude": 40.8522,
+    "longitude": 27.7125,
+    "depth": 7,
+    "magnitude": 1.4,
+    "placeName": "WESTERN TURKEY"
+  },
+  "md5": "237dc6709462b020dd84260e6db1c2d3"
+}
+            
+
+
+                22:52:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216747234
+}
+            
+
+
+                22:52:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216777234
+}
+            
+
+
+                22:53:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216807234
+}
+            
+
+
+                22:53:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216837307
+}
+            
+
+
+                22:54:18 - 服务器
+                {
+  "type": "update",
+  "source": "fssn",
+  "Data": {
+    "id": "FSSN2026clgl",
+    "shockTime": "2026-02-04 22:49:45",
+    "createTime": "2026-02-04 22:54:18",
+    "latitude": 23.2024,
+    "longitude": 120.8173,
+    "depth": 10,
+    "magnitude": 2.4,
+    "placeName": "Taiwan, China",
+    "placeName_zh": "中国台湾",
+    "infoTypeName": "正式(已核实)"
+  },
+  "md5": "5b40f849496017831b3b11afe912f955"
+}
+            
+
+
+                22:54:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216867330
+}
+            
+
+
+                22:54:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216897331
+}
+            
+
+
+                22:55:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216927334
+}
+            
+
+
+                22:55:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216957334
+}
+            
+
+
+                22:56:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770216987374
+}
+            
+
+
+                22:56:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217017431
+}
+            
+
+
+                22:57:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217047431
+}
+            
+
+
+                22:57:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217077449
+}
+            
+
+
+                22:58:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217107449
+}
+            
+
+
+                22:58:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217137480
+}
+            
+
+
+                22:59:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217167554
+}
+            
+
+
+                22:59:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217197569
+}
+            
+
+
+                23:00:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217227599
+}
+            
+
+
+                23:00:33 - 服务器
+                {
+  "type": "update",
+  "source": "emsc",
+  "Data": {
+    "id": "20260204_0000201",
+    "shockTime": "2026-02-04 22:46:21",
+    "latitude": -8.52,
+    "longitude": 109.46,
+    "depth": 63,
+    "magnitude": 2.5,
+    "placeName": "JAVA, INDONESIA"
+  },
+  "md5": "297af82873a5cc173b99ba8f5a21ed66"
+}
+            
+
+
+                23:00:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217257615
+}
+            
+
+
+                23:01:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217287624
+}
+            
+
+
+                23:01:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217317639
+}
+            
+
+
+                23:02:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217347639
+}
+            
+
+
+                23:02:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217377681
+}
+            
+
+
+                23:03:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217407681
+}
+            
+
+
+                23:03:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217437735
+}
+            
+
+
+                23:04:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217467742
+}
+            
+
+
+                23:04:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217497742
+}
+            
+
+
+                23:05:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217527742
+}
+            
+
+
+                23:05:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217557792
+}
+            
+
+
+                23:06:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217587792
+}
+            
+
+
+                23:06:54 - 服务器
+                {
+  "type": "update",
+  "source": "cwa",
+  "Data": {
+    "id": "115011",
+    "shockTime": "2026-01-27 02:48:37",
+    "latitude": 21.8,
+    "longitude": 120.8,
+    "depth": 23.9,
+    "magnitude": 4.6,
+    "placeName": "屏東縣政府南南東方  103.2  公里 (位於屏東縣近海)",
+    "maxIntensity": "3級",
+    "imageURI": "https://scweb.cwa.gov.tw/webdata/OLDEQ/202601/2026012702483746011_H.png",
+    "shakemapURI": "https://scweb.cwa.gov.tw/webdata/drawTrace/plotContour/2026/2026011i.png"
+  },
+  "md5": "25643f4c61cbf7bf20d16634bf6e7980"
+}
+            
+
+
+                23:06:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217617792
+}
+            
+
+
+                23:07:05 - 服务器
+                {
+  "type": "update",
+  "source": "cwa",
+  "Data": {
+    "id": "115000",
+    "shockTime": "2026-02-03 09:42:10",
+    "latitude": 24.33,
+    "longitude": 121.6,
+    "depth": 22.1,
+    "magnitude": 3.2,
+    "placeName": "花蓮縣政府北方  37.3  公里 (位於花蓮縣秀林鄉)",
+    "maxIntensity": "2級",
+    "imageURI": "https://scweb.cwa.gov.tw/webdata/OLDEQ/202602/2026020309421032_H.png",
+    "shakemapURI": null
+  },
+  "md5": "02980f6f2e64c4590f9870f8c58e5c3c"
+}
+            
+
+
+                23:07:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217647872
+}
+            
+
+
+                23:07:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217677873
+}
+            
+
+
+                23:08:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217707873
+}
+            
+
+
+                23:08:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217737873
+}
+            
+
+
+                23:09:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217767873
+}
+            
+
+
+                23:09:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217797874
+}
+            
+
+
+                23:10:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217827873
+}
+            
+
+
+                23:10:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217857874
+}
+            
+
+
+                23:11:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217887873
+}
+            
+
+
+                23:11:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217917873
+}
+            
+
+
+                23:12:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217947873
+}
+            
+
+
+                23:12:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770217977874
+}
+            
+
+
+                23:13:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218007873
+}
+            
+
+
+                23:13:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218037873
+}
+            
+
+
+                23:14:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218067873
+}
+            
+
+
+                23:14:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218097876
+}
+            
+
+
+                23:15:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218127876
+}
+            
+
+
+                23:15:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218157876
+}
+            
+
+
+                23:16:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218187926
+}
+            
+
+
+                23:16:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218217958
+}
+            
+
+
+                23:17:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218247958
+}
+            
+
+
+                23:17:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218277987
+}
+            
+
+
+                23:18:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218308038
+}
+            
+
+
+                23:18:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218338065
+}
+            
+
+
+                23:19:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218368064
+}
+            
+
+
+                23:19:57 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218398078
+}
+            
+
+
+                23:20:27 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218428086
+}
+            
+
+
+                23:20:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218458138
+}
+            
+
+
+                23:21:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218488159
+}
+            
+
+
+                23:21:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218518246
+}
+            
+
+
+                23:22:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218548353
+}
+            
+
+
+                23:22:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218578352
+}
+            
+
+
+                23:23:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218608368
+}
+            
+
+
+                23:23:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218638434
+}
+            
+
+
+                23:24:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218668463
+}
+            
+
+
+                23:24:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218698574
+}
+            
+
+
+                23:25:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218728576
+}
+            
+
+
+                23:25:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218758576
+}
+            
+
+
+                23:26:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218788576
+}
+            
+
+
+                23:26:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218818608
+}
+            
+
+
+                23:26:59 - 服务器
+                {
+  "type": "update",
+  "source": "usgs",
+  "Data": {
+    "id": "2026clpiur",
+    "title": "M 5.2 - 47 km NNW of Beluga, Alaska",
+    "infoTypeName": "automatic",
+    "magnitude": 5.2,
+    "placeName": "47 km NNW of Beluga, Alaska",
+    "shockTime": "2026-02-04 23:24:45",
+    "updateTime": "2026-02-04 23:26:29",
+    "longitude": -151.557,
+    "latitude": 61.497,
+    "depth": 102.2,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak2026clpiur"
+  },
+  "md5": "c95c317d41080f9b335f16645190092e"
+}
+            
+
+
+                23:27:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218848609
+}
+            
+
+
+                23:27:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218878610
+}
+            
+
+
+                23:27:59 - 服务器
+                {
+  "type": "update",
+  "source": "usgs",
+  "Data": {
+    "id": "2026clpiur",
+    "title": "M 4.6 - 45 km NNW of Beluga, Alaska",
+    "infoTypeName": "automatic",
+    "magnitude": 4.6,
+    "placeName": "45 km NNW of Beluga, Alaska",
+    "shockTime": "2026-02-04 23:24:45",
+    "updateTime": "2026-02-04 23:27:01",
+    "longitude": -151.548,
+    "latitude": 61.488,
+    "depth": 100.5,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak2026clpiur"
+  },
+  "md5": "16ee05e672c4909ad3fd58d2913d76cc"
+}
+            
+
+
+                23:28:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218908611
+}
+            
+
+
+                23:28:34 - 服务器
+                {
+  "type": "update",
+  "source": "emsc",
+  "Data": {
+    "id": "20260204_0000202",
+    "shockTime": "2026-02-04 23:16:54",
+    "latitude": 2.68,
+    "longitude": 98.24,
+    "depth": 144,
+    "magnitude": 2.5,
+    "placeName": "NORTHERN SUMATRA, INDONESIA"
+  },
+  "md5": "0d9b4c2172d465f09e26350b60fd7ac9"
+}
+            
+
+
+                23:28:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218938612
+}
+            
+
+
+                23:28:59 - 服务器
+                {
+  "type": "update",
+  "source": "usgs",
+  "Data": {
+    "id": "2026clpiur",
+    "title": "M 4.6 - 45 km NNW of Beluga, Alaska",
+    "infoTypeName": "automatic",
+    "magnitude": 4.6,
+    "placeName": "45 km NNW of Beluga, Alaska",
+    "shockTime": "2026-02-04 23:24:45",
+    "updateTime": "2026-02-04 23:27:28",
+    "longitude": -151.548,
+    "latitude": 61.488,
+    "depth": 100.5,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak2026clpiur"
+  },
+  "md5": "9d911477275d21300a0f9ee0c72046d8"
+}
+            
+
+
+                23:29:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218968613
+}
+            
+
+
+                23:29:36 - 服务器
+                {
+  "type": "update",
+  "source": "fssn",
+  "Data": {
+    "id": "FSSN2026clhm",
+    "shockTime": "2026-02-04 23:24:45",
+    "createTime": "2026-02-04 23:29:36",
+    "latitude": 61.5161,
+    "longitude": -151.5467,
+    "depth": 89.738319396973,
+    "magnitude": 4.7,
+    "placeName": "Southern Alaska",
+    "placeName_zh": "阿拉斯加南部",
+    "infoTypeName": "正式(已核实)"
+  },
+  "md5": "7c74543d94c07130220fef5529f8a126"
+}
+            
+
+
+                23:29:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770218998613
+}
+            
+
+
+                23:30:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219028613
+}
+            
+
+
+                23:30:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219058613
+}
+            
+
+
+                23:31:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219088615
+}
+            
+
+
+                23:31:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219118615
+}
+            
+
+
+                23:31:59 - 服务器
+                {
+  "type": "update",
+  "source": "usgs",
+  "Data": {
+    "id": "2026clpiur",
+    "title": "M 4.6 - 45 km NNW of Beluga, Alaska",
+    "infoTypeName": "automatic",
+    "magnitude": 4.6,
+    "placeName": "45 km NNW of Beluga, Alaska",
+    "shockTime": "2026-02-04 23:24:45",
+    "updateTime": "2026-02-04 23:31:37",
+    "longitude": -151.548,
+    "latitude": 61.488,
+    "depth": 100.5,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak2026clpiur"
+  },
+  "md5": "8b38f8d071e30e6f0381bf6588d1cb08"
+}
+            
+
+
+                23:32:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219148616
+}
+            
+
+
+                23:32:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219178616
+}
+            
+
+
+                23:33:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219208616
+}
+            
+
+
+                23:33:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219238616
+}
+            
+
+
+                23:34:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219268616
+}
+            
+
+
+                23:34:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219298617
+}
+            
+
+
+                23:35:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219328619
+}
+            
+
+
+                23:35:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219358619
+}
+            
+
+
+                23:35:59 - 服务器
+                {
+  "type": "update",
+  "source": "usgs",
+  "Data": {
+    "id": "2026clpiur",
+    "title": "M 4.6 - 45 km NNW of Beluga, Alaska",
+    "infoTypeName": "automatic",
+    "magnitude": 4.6,
+    "placeName": "45 km NNW of Beluga, Alaska",
+    "shockTime": "2026-02-04 23:24:45",
+    "updateTime": "2026-02-04 23:34:27",
+    "longitude": -151.548,
+    "latitude": 61.488,
+    "depth": 100.5,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak2026clpiur"
+  },
+  "md5": "f790ace159e5df1ac8916403de9c8981"
+}
+            
+
+
+                23:36:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219388621
+}
+            
+
+
+                23:36:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219418623
+}
+            
+
+
+                23:37:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219448623
+}
+            
+
+
+                23:37:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219478627
+}
+            
+
+
+                23:37:59 - 服务器
+                {
+  "type": "update",
+  "source": "usgs",
+  "Data": {
+    "id": "2026clpiur",
+    "title": "M 4.6 - 45 km NNW of Beluga, Alaska",
+    "infoTypeName": "automatic",
+    "magnitude": 4.6,
+    "placeName": "45 km NNW of Beluga, Alaska",
+    "shockTime": "2026-02-04 23:24:45",
+    "updateTime": "2026-02-04 23:37:07",
+    "longitude": -151.548,
+    "latitude": 61.488,
+    "depth": 100.5,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak2026clpiur"
+  },
+  "md5": "a3235c7325f8b051b3845209e8e3b9e0"
+}
+            
+
+
+                23:38:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219508626
+}
+            
+
+
+                23:38:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219538626
+}
+            
+
+
+                23:39:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219568627
+}
+            
+
+
+                23:39:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219598627
+}
+            
+
+
+                23:40:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219628630
+}
+            
+
+
+                23:40:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219658631
+}
+            
+
+
+                23:41:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219688631
+}
+            
+
+
+                23:41:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219718635
+}
+            
+
+
+                23:42:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219748636
+}
+            
+
+
+                23:42:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219778636
+}
+            
+
+
+                23:43:00 - 服务器
+                {
+  "type": "update",
+  "source": "usgs",
+  "Data": {
+    "id": "2026clpiur",
+    "title": "M 4.6 - 45 km NNW of Beluga, Alaska",
+    "infoTypeName": "automatic",
+    "magnitude": 4.6,
+    "placeName": "45 km NNW of Beluga, Alaska",
+    "shockTime": "2026-02-04 23:24:45",
+    "updateTime": "2026-02-04 23:42:13",
+    "longitude": -151.548,
+    "latitude": 61.488,
+    "depth": 100.5,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak2026clpiur"
+  },
+  "md5": "af23acdb984e6857df729b6397a4132e"
+}
+            
+
+
+                23:43:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219808636
+}
+            
+
+
+                23:43:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219838637
+}
+            
+
+
+                23:44:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219868638
+}
+            
+
+
+                23:44:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219898638
+}
+            
+
+
+                23:45:05 - 服务器
+                {
+  "type": "update",
+  "source": "bcsf",
+  "Data": {
+    "id": "fr2026sztyrj",
+    "shockTime": "2026-02-04 23:24:27",
+    "latitude": 60.22199249,
+    "longitude": -150.7919159,
+    "depth": 10,
+    "magnitude": 5.041768521,
+    "placeName": "Event of magnitude 5.0, near of Anchorage (Monde)"
+  },
+  "md5": "73bf058eb2e5cdac8e1e084c5c6b37b1"
+}
+            
+
+
+                23:45:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219928638
+}
+            
+
+
+                23:45:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219958639
+}
+            
+
+
+                23:46:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770219988639
+}
+            
+
+
+                23:46:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220018640
+}
+            
+
+
+                23:47:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220048641
+}
+            
+
+
+                23:47:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220078679
+}
+            
+
+
+                23:48:00 - 服务器
+                {
+  "type": "update",
+  "source": "usgs",
+  "Data": {
+    "id": "2026clpiur",
+    "title": "M 4.6 - 45 km NNW of Beluga, Alaska",
+    "infoTypeName": "automatic",
+    "magnitude": 4.6,
+    "placeName": "45 km NNW of Beluga, Alaska",
+    "shockTime": "2026-02-04 23:24:45",
+    "updateTime": "2026-02-04 23:47:07",
+    "longitude": -151.548,
+    "latitude": 61.488,
+    "depth": 100.5,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak2026clpiur"
+  },
+  "md5": "ee8c1d5c75460ea3a7f1ad480f5544e4"
+}
+            
+
+
+                23:48:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220108679
+}
+            
+
+
+                23:48:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220138679
+}
+            
+
+
+                23:49:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220168679
+}
+            
+
+
+                23:49:35 - 服务器
+                {
+  "type": "update",
+  "source": "emsc",
+  "Data": {
+    "id": "20260204_0000205",
+    "shockTime": "2026-02-04 23:40:10",
+    "latitude": 2.43,
+    "longitude": 95.75,
+    "depth": 7,
+    "magnitude": 2.7,
+    "placeName": "SIMEULUE, INDONESIA"
+  },
+  "md5": "fe4dc198b830058d0c23d3e5027a5532"
+}
+            
+
+
+                23:49:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220198681
+}
+            
+
+
+                23:50:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220228681
+}
+            
+
+
+                23:50:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220258809
+}
+            
+
+
+                23:51:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220288810
+}
+            
+
+
+                23:51:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220318810
+}
+            
+
+
+                23:52:00 - 服务器
+                {
+  "type": "update",
+  "source": "usgs",
+  "Data": {
+    "id": "2026clpiur",
+    "title": "M 4.6 - 45 km NNW of Beluga, Alaska",
+    "infoTypeName": "automatic",
+    "magnitude": 4.6,
+    "placeName": "45 km NNW of Beluga, Alaska",
+    "shockTime": "2026-02-04 23:24:45",
+    "updateTime": "2026-02-04 23:51:01",
+    "longitude": -151.548,
+    "latitude": 61.488,
+    "depth": 100.5,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak2026clpiur"
+  },
+  "md5": "151370b65139e262acf5b9301a7123f0"
+}
+            
+
+
+                23:52:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220348813
+}
+            
+
+
+                23:52:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220378812
+}
+            
+
+
+                23:53:00 - 服务器
+                {
+  "type": "update",
+  "source": "usgs",
+  "Data": {
+    "id": "2026clpiur",
+    "title": "M 4.6 - 45 km NNW of Beluga, Alaska",
+    "infoTypeName": "automatic",
+    "magnitude": 4.6,
+    "placeName": "45 km NNW of Beluga, Alaska",
+    "shockTime": "2026-02-04 23:24:45",
+    "updateTime": "2026-02-04 23:52:10",
+    "longitude": -151.548,
+    "latitude": 61.488,
+    "depth": 100.5,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak2026clpiur"
+  },
+  "md5": "e2f503bcd5f3161252181cff1ec7b50d"
+}
+            
+
+
+                23:53:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220408813
+}
+            
+
+
+                23:53:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220438815
+}
+            
+
+
+                23:54:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220468816
+}
+            
+
+
+                23:54:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220498819
+}
+            
+
+
+                23:55:10 - 服务器
+                {
+  "type": "update",
+  "source": "weatheralarm",
+  "Data": {
+    "id": "45020041600000_20260204234836",
+    "headline": "广西壮族自治区柳州市发布大雾黄色预警信号",
+    "effective": "2026/02/04 23:48",
+    "description": "柳州市气象台2026年2月4日23时41分继续发布大雾黄色预警信号：预计未来12小时内柳州市区仍将出现能见度小于500米的大雾天气，请做好防范。",
+    "longitude": 109.4035,
+    "latitude": 24.3171,
+    "type": "p0005003",
+    "title": "广西壮族自治区柳州市发布大雾黄色预警信号"
+  },
+  "md5": "3b3f88504da57777522d302e9fef8c59"
+}
+            
+
+
+                23:55:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220528820
+}
+            
+
+
+                23:55:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220558820
+}
+            
+
+
+                23:56:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220588819
+}
+            
+
+
+                23:56:51 - 服务器
+                {
+  "type": "update",
+  "source": "usgs",
+  "Data": {
+    "id": "2026clpiur",
+    "title": "M 4.4 - 49 km SSW of Skwentna, Alaska",
+    "infoTypeName": "reviewed",
+    "magnitude": 4.4,
+    "placeName": "49 km SSW of Skwentna, Alaska",
+    "shockTime": "2026-02-04 23:24:43",
+    "updateTime": "2026-02-04 23:56:48",
+    "longitude": -151.608,
+    "latitude": 61.559,
+    "depth": 0,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak2026clpiur"
+  },
+  "md5": "158623179fd9a06a3922ab56a8dd19bc"
+}
+            
+
+
+                23:56:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220618821
+}
+            
+
+
+                23:57:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220648820
+}
+            
+
+
+                23:57:51 - 服务器
+                {
+  "type": "update",
+  "source": "usgs",
+  "Data": {
+    "id": "2026clpiur",
+    "title": "M 4.4 - 49 km SSW of Skwentna, Alaska",
+    "infoTypeName": "reviewed",
+    "magnitude": 4.4,
+    "placeName": "49 km SSW of Skwentna, Alaska",
+    "shockTime": "2026-02-04 23:24:43",
+    "updateTime": "2026-02-04 23:57:12",
+    "longitude": -151.608,
+    "latitude": 61.559,
+    "depth": 0,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak2026clpiur"
+  },
+  "md5": "0413bf23e1e7f9cff24c9149a2bdeabb"
+}
+            
+
+
+                23:57:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220678821
+}
+            
+
+
+                23:58:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220708822
+}
+            
+
+
+                23:58:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220738822
+}
+            
+
+
+                23:59:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220768822
+}
+            
+
+
+                23:59:51 - 服务器
+                {
+  "type": "update",
+  "source": "usgs",
+  "Data": {
+    "id": "2026clpiur",
+    "title": "M 4.4 - 49 km SSW of Skwentna, Alaska",
+    "infoTypeName": "reviewed",
+    "magnitude": 4.4,
+    "placeName": "49 km SSW of Skwentna, Alaska",
+    "shockTime": "2026-02-04 23:24:43",
+    "updateTime": "2026-02-04 23:58:26",
+    "longitude": -151.608,
+    "latitude": 61.559,
+    "depth": 0,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak2026clpiur"
+  },
+  "md5": "506de239b54f5c9d46ac75c31deb67b1"
+}
+            
+
+
+                23:59:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220798823
+}
+            
+
+
+                00:00:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220828824
+}
+            
+
+
+                00:00:35 - 服务器
+                {
+  "type": "update",
+  "source": "emsc",
+  "Data": {
+    "id": "20260204_0000208",
+    "shockTime": "2026-02-04 23:52:32",
+    "latitude": -2.94,
+    "longitude": 134.39,
+    "depth": 10,
+    "magnitude": 2.7,
+    "placeName": "NEAR N COAST OF PAPUA, INDONESIA"
+  },
+  "md5": "4858a2680c1fe51a0ae1133efa570781"
+}
+            
+
+
+                00:00:35 - 服务器
+                {
+  "type": "update",
+  "source": "cwa",
+  "Data": {
+    "id": "115011",
+    "shockTime": "2026-01-27 02:48:37",
+    "latitude": 21.8,
+    "longitude": 120.8,
+    "depth": 23.9,
+    "magnitude": 4.6,
+    "placeName": "屏東縣政府南南東方  103.2  公里 (位於屏東縣近海)",
+    "maxIntensity": "3級",
+    "imageURI": "https://scweb.cwa.gov.tw/webdata/OLDEQ/202601/2026012702483746011_H.png",
+    "shakemapURI": "https://scweb.cwa.gov.tw/webdata/drawTrace/plotContour/2026/2026011i.png"
+  },
+  "md5": "25643f4c61cbf7bf20d16634bf6e7980"
+}
+            
+
+
+                00:00:47 - 服务器
+                {
+  "type": "update",
+  "source": "cwa",
+  "Data": {
+    "id": "115000",
+    "shockTime": "2026-02-03 09:42:10",
+    "latitude": 24.33,
+    "longitude": 121.6,
+    "depth": 22.1,
+    "magnitude": 3.2,
+    "placeName": "花蓮縣政府北方  37.3  公里 (位於花蓮縣秀林鄉)",
+    "maxIntensity": "2級",
+    "imageURI": "https://scweb.cwa.gov.tw/webdata/OLDEQ/202602/2026020309421032_H.png",
+    "shakemapURI": null
+  },
+  "md5": "02980f6f2e64c4590f9870f8c58e5c3c"
+}
+            
+
+
+                00:00:51 - 服务器
+                {
+  "type": "update",
+  "source": "usgs",
+  "Data": {
+    "id": "2026clpiur",
+    "title": "M 4.4 - 49 km SSW of Skwentna, Alaska",
+    "infoTypeName": "reviewed",
+    "magnitude": 4.4,
+    "placeName": "49 km SSW of Skwentna, Alaska",
+    "shockTime": "2026-02-04 23:24:43",
+    "updateTime": "2026-02-04 23:58:27",
+    "longitude": -151.608,
+    "latitude": 61.559,
+    "depth": 0,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak2026clpiur"
+  },
+  "md5": "766b5a706ea388e14dee556338bb5c47"
+}
+            
+
+
+                00:00:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220858825
+}
+            
+
+
+                00:01:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220888824
+}
+            
+
+
+                00:01:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220918828
+}
+            
+
+
+                00:02:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220948829
+}
+            
+
+
+                00:02:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770220978828
+}
+            
+
+
+                00:03:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770221008828
+}
+            
+
+
+                00:03:51 - 服务器
+                {
+  "type": "update",
+  "source": "usgs",
+  "Data": {
+    "id": "2026clpiur",
+    "title": "M 4.4 - 49 km SSW of Skwentna, Alaska",
+    "infoTypeName": "reviewed",
+    "magnitude": 4.4,
+    "placeName": "49 km SSW of Skwentna, Alaska",
+    "shockTime": "2026-02-04 23:24:43",
+    "updateTime": "2026-02-05 00:02:19",
+    "longitude": -151.608,
+    "latitude": 61.559,
+    "depth": 0,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak2026clpiur"
+  },
+  "md5": "1c3e108205a637369afadd7ff452912d"
+}
+            
+
+
+                00:03:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770221038830
+}
+            
+
+
+                00:04:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770221068830
+}
+            
+
+
+                00:04:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770221098830
+}
+            
+
+
+                00:05:01 - 服务器
+                {
+  "type": "update",
+  "source": "weatheralarm",
+  "Data": {
+    "id": "42080041600000_20260204235404",
+    "headline": "湖北省荆门市发布大雾黄色预警信号",
+    "effective": "2026/02/04 23:54",
+    "description": "荆门市气象台2026年02月04日23时54分发布大雾黄色预警信号：预计今天夜间到明天上午，荆门市部分地区将出现能见度小于500米，局部小于200米的雾，请注意防范。",
+    "longitude": 112.2091,
+    "latitude": 31.0386,
+    "type": "p0005003",
+    "title": "湖北省荆门市发布大雾黄色预警信号"
+  },
+  "md5": "d2820671f7dc13b83eb039c061a81212"
+}
+            
+
+
+                00:05:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770221128830
+}
+            
+
+
+                00:05:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770221158833
+}
+            
+
+
+                00:06:28 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770221188833
+}
+            
+
+
+                00:06:58 - 服务器
+                {
+  "type": "heartbeat",
+  "ver": "2.1.0",
+  "id": "0647551e-0292-4a5d-b41c-1a83889ea317",
+  "timestamp": 1770221218841
+}
+            

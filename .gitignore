@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg
+*.egg-info/
+.eggs/
+dist/
+venv/
+.venv/
+env/
+.env/
+
+# 构建/打包（保留 .spec，仅忽略构建输出）
+build/
+
+# 日志与临时
+启动日志.txt
+debug/
+*.log
+fe_fix.txt
+
+# 系统/IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+Thumbs.db
+.DS_Store
+
+# PyInstaller
+*.manifest
+*.toc

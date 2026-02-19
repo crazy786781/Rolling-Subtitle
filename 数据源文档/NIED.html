@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIED WebSocket API 字段说明文档</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #34495e;
+            --success-color: #27ae60;
+            --warning-color: #f39c12;
+            --border-radius: 6px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            padding-bottom: 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            box-shadow: var(--box-shadow);
+        }
+        
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .connection-info {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            margin-bottom: 2rem;
+        }
+        
+        .connection-info .address {
+            font-family: monospace;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+        
+        .message-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .message-type-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: var(--box-shadow);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            border-top: 4px solid var(--secondary-color);
+        }
+        
+        .message-type-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .message-type-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .message-type-card.welcome {
+            border-top-color: var(--success-color);
+        }
+        
+        .message-type-card.update {
+            border-top-color: var(--accent-color);
+        }
+        
+        .message-type-card.heartbeat {
+            border-top-color: var(--warning-color);
+        }
+        
+        .message-type-card.pong {
+            border-top-color: var(--secondary-color);
+        }
+        
+        .message-type-card.timestamp {
+            border-top-color: #9b59b6;
+        }
+        
+        .message-type-card .icon {
+            font-size: 1.2rem;
+        }
+        
+        .message-type-card p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .section {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        th {
+            background-color: #f8f9fa;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        tr:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .code-block {
+            background-color: #f8f9fa;
+            border-radius: var(--border-radius);
+            padding: 1rem;
+            margin: 1rem 0;
+            overflow-x: auto;
+            border-left: 4px solid var(--secondary-color);
+        }
+        
+        .code-block pre {
+            white-space: pre-wrap;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+        }
+        
+        .json-key {
+            color: #d73a49;
+        }
+        
+        .json-string {
+            color: #032f62;
+        }
+        
+        .json-number {
+            color: #005cc5;
+        }
+        
+        .json-boolean {
+            color: #6f42c1;
+        }
+        
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .tab {
+            padding: 0.75rem 1.5rem;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .tab.active {
+            border-bottom-color: var(--secondary-color);
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .timestamp-info {
+            background-color: #f8f9fa;
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        .timestamp-info h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .timestamp-info ul {
+            margin-left: 1.5rem;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .message-types {
+                grid-template-columns: 1fr;
+            }
+            
+            .tabs {
+                flex-direction: column;
+            }
+            
+            .tab {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>NIED WebSocket API 字段说明文档</h1>
+            <p>日本地震预警数据推送服务接口文档</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="connection-info">
+            <div>
+                <strong>连接地址：</strong>
+                <span class="address">wss://sismotide.top/nied</span>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>概述</h2>
+            <p>本文档描述了 NIED 数据推送服务通过 WebSocket 向客户端推送的所有消息格式和字段说明。</p>
+            <p><strong>数据格式：</strong>所有消息均为 JSON 格式，使用 UTF-8 编码</p>
+        </div>
+        
+        <div class="section">
+            <h2>消息类型</h2>
+            <div class="message-types">
+                <div class="message-type-card welcome" data-type="welcome">
+                    <h3><span class="icon">👋</span> Welcome 消息</h3>
+                    <p>连接建立时发送的欢迎消息</p>
+                </div>
+                <div class="message-type-card update" data-type="update">
+                    <h3><span class="icon">🔄</span> Update 消息</h3>
+                    <p>新预警数据或缓存数据推送</p>
+                </div>
+                <div class="message-type-card heartbeat" data-type="heartbeat">
+                    <h3><span class="icon">💓</span> Heartbeat 消息</h3>
+                    <p>定期发送的心跳包</p>
+                </div>
+                <div class="message-type-card pong" data-type="pong">
+                    <h3><span class="icon">🏓</span> Pong 消息</h3>
+                    <p>响应客户端的 ping 请求</p>
+                </div>
+                <div class="message-type-card timestamp" data-type="timestamp">
+                    <h3><span class="icon">⏰</span> 时间戳说明</h3>
+                    <p>时间戳格式与时区说明</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>详细字段说明</h2>
+            <div class="tabs">
+                <div class="tab active" data-tab="welcome">Welcome</div>
+                <div class="tab" data-tab="update">Update</div>
+                <div class="tab" data-tab="heartbeat">Heartbeat</div>
+                <div class="tab" data-tab="pong">Pong</div>
+                <div class="tab" data-tab="timestamp">时间戳说明</div>
+            </div>
+            
+            <div class="tab-content active" id="welcome-content">
+                <h3>Welcome 消息（欢迎消息）</h3>
+                <p><strong>触发时机：</strong>客户端成功建立 WebSocket 连接后立即发送</p>
+                
+                <h4>消息格式</h4>
+                <div class="code-block">
+                    <pre><code>{
+  <span class="json-key">"type"</span>: <span class="json-string">"welcome"</span>,
+  <span class="json-key">"message"</span>: <span class="json-string">"已连接到NIED数据推送服务"</span>,
+  <span class="json-key">"timestamp"</span>: <span class="json-number">1630000000000</span>
+}</code></pre>
+                </div>
+                
+                <h4>字段说明</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>字段名</th>
+                            <th>类型</th>
+                            <th>必填</th>
+                            <th>说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>type</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>消息类型，固定值 <code>"welcome"</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>message</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>欢迎消息文本</td>
+                        </tr>
+                        <tr>
+                            <td><code>timestamp</code></td>
+                            <td>number</td>
+                            <td>是</td>
+                            <td>时间戳（毫秒），Unix 时间戳</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="tab-content" id="update-content">
+                <h3>Update 消息（数据更新）</h3>
+                <p><strong>触发时机：</strong></p>
+                <ul>
+                    <li>检测到新的预警数据时，立即推送给所有客户端</li>
+                    <li>新客户端连接时，如果有缓存数据，立即推送最新一条缓存数据</li>
+                </ul>
+                
+                <h4>消息格式</h4>
+                <div class="code-block">
+                    <pre><code>{
+  <span class="json-key">"type"</span>: <span class="json-string">"update"</span>,
+  <span class="json-key">"data"</span>: {
+    <span class="json-key">"result"</span>: {
+      <span class="json-key">"status"</span>: <span class="json-string">"success"</span>,
+      <span class="json-key">"message"</span>: <span class="json-string">""</span>,
+      <span class="json-key">"is_auth"</span>: <span class="json-boolean">true</span>
+    },
+    <span class="json-key">"report_time"</span>: <span class="json-string">"2025/11/09 20:11:43"</span>,
+    <span class="json-key">"region_code"</span>: <span class="json-string">""</span>,
+    <span class="json-key">"request_time"</span>: <span class="json-string">"202511092011%s"</span>,
+    <span class="json-key">"region_name"</span>: <span class="json-string">"三陸沖"</span>,
+    <span class="json-key">"longitude"</span>: <span class="json-string">"143.7"</span>,
+    <span class="json-key">"is_cancel"</span>: <span class="json-boolean">false</span>,
+    <span class="json-key">"depth"</span>: <span class="json-string">"20km"</span>,
+    <span class="json-key">"calcintensity"</span>: <span class="json-string">"2"</span>,
+    <span class="json-key">"is_final"</span>: <span class="json-boolean">false</span>,
+    <span class="json-key">"is_training"</span>: <span class="json-boolean">false</span>,
+    <span class="json-key">"latitude"</span>: <span class="json-string">"39.3"</span>,
+    <span class="json-key">"origin_time"</span>: <span class="json-string">"20251109201126"</span>,
+    <span class="json-key">"security"</span>: {
+      <span class="json-key">"realm"</span>: <span class="json-string">"/kyoshin_monitor/static/jsondata/eew_est/"</span>,
+      <span class="json-key">"hash"</span>: <span class="json-string">"b61e4d95a8c42e004665825c098a6de4"</span>
+    },
+    <span class="json-key">"magunitude"</span>: <span class="json-string">"4.6"</span>,
+    <span class="json-key">"report_num"</span>: <span class="json-string">"1"</span>,
+    <span class="json-key">"request_hypo_type"</span>: <span class="json-string">"eew"</span>,
+    <span class="json-key">"report_id"</span>: <span class="json-string">"20251109201130"</span>,
+    <span class="json-key">"alertflg"</span>: <span class="json-string">"予報"</span>
+  },
+  <span class="json-key">"timestamp"</span>: <span class="json-number">1762689403835</span>,
+  <span class="json-key">"from_cache"</span>: <span class="json-boolean">true</span>
+}</code></pre>
+                </div>
+                
+                <h4>外层字段说明</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>字段名</th>
+                            <th>类型</th>
+                            <th>必填</th>
+                            <th>说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>type</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>消息类型，固定值 <code>"update"</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>data</code></td>
+                            <td>object</td>
+                            <td>是</td>
+                            <td>预警数据对象</td>
+                        </tr>
+                        <tr>
+                            <td><code>timestamp</code></td>
+                            <td>number</td>
+                            <td>是</td>
+                            <td>消息发送时间戳（毫秒），Unix 时间戳</td>
+                        </tr>
+                        <tr>
+                            <td><code>from_cache</code></td>
+                            <td>boolean</td>
+                            <td>否</td>
+                            <td>是否为缓存数据。<code>true</code> 表示从缓存推送，<code>false</code> 表示实时新数据</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h4>data 对象字段说明</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>字段名</th>
+                            <th>类型</th>
+                            <th>必填</th>
+                            <th>说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>result</code></td>
+                            <td>object</td>
+                            <td>是</td>
+                            <td>请求结果对象</td>
+                        </tr>
+                        <tr>
+                            <td><code>report_time</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>报告时间，格式为 "YYYY/MM/DD HH:MM:SS"</td>
+                        </tr>
+                        <tr>
+                            <td><code>region_code</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>区域代码</td>
+                        </tr>
+                        <tr>
+                            <td><code>request_time</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>请求时间，格式为 "YYYYMMDDHHMM%s"</td>
+                        </tr>
+                        <tr>
+                            <td><code>region_name</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>区域名称</td>
+                        </tr>
+                        <tr>
+                            <td><code>longitude</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>震中经度（度）</td>
+                        </tr>
+                        <tr>
+                            <td><code>is_cancel</code></td>
+                            <td>boolean</td>
+                            <td>是</td>
+                            <td>是否为取消报告</td>
+                        </tr>
+                        <tr>
+                            <td><code>depth</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>震源深度（公里）</td>
+                        </tr>
+                        <tr>
+                            <td><code>calcintensity</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>计算烈度</td>
+                        </tr>
+                        <tr>
+                            <td><code>is_final</code></td>
+                            <td>boolean</td>
+                            <td>是</td>
+                            <td>是否为最终报告</td>
+                        </tr>
+                        <tr>
+                            <td><code>is_training</code></td>
+                            <td>boolean</td>
+                            <td>是</td>
+                            <td>是否为训练模式</td>
+                        </tr>
+                        <tr>
+                            <td><code>latitude</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>震中纬度（度）</td>
+                        </tr>
+                        <tr>
+                            <td><code>origin_time</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>发震时间，格式为 "YYYYMMDDHHMMSS"</td>
+                        </tr>
+                        <tr>
+                            <td><code>security</code></td>
+                            <td>object</td>
+                            <td>是</td>
+                            <td>安全验证对象</td>
+                        </tr>
+                        <tr>
+                            <td><code>magunitude</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>震级（注意：字段名拼写为 magunitude）</td>
+                        </tr>
+                        <tr>
+                            <td><code>report_num</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>报告编号</td>
+                        </tr>
+                        <tr>
+                            <td><code>request_hypo_type</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>请求类型，固定值 "eew"</td>
+                        </tr>
+                        <tr>
+                            <td><code>report_id</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>报告ID，格式为 "YYYYMMDDHHMMSS"</td>
+                        </tr>
+                        <tr>
+                            <td><code>alertflg</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>警报标志，可能值为 "予報" 等</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h4>result 对象字段说明</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>字段名</th>
+                            <th>类型</th>
+                            <th>必填</th>
+                            <th>说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>status</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>请求状态，固定值 "success"</td>
+                        </tr>
+                        <tr>
+                            <td><code>message</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>状态消息</td>
+                        </tr>
+                        <tr>
+                            <td><code>is_auth</code></td>
+                            <td>boolean</td>
+                            <td>是</td>
+                            <td>是否已认证</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h4>security 对象字段说明</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>字段名</th>
+                            <th>类型</th>
+                            <th>必填</th>
+                            <th>说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>realm</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>安全域路径</td>
+                        </tr>
+                        <tr>
+                            <td><code>hash</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>安全哈希值</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="tab-content" id="heartbeat-content">
+                <h3>Heartbeat 消息（心跳包）</h3>
+                <p><strong>触发时机：</strong>每 30 秒自动向所有连接的客户端发送一次</p>
+                
+                <h4>消息格式</h4>
+                <div class="code-block">
+                    <pre><code>{
+  <span class="json-key">"type"</span>: <span class="json-string">"heartbeat"</span>,
+  <span class="json-key">"ver"</span>: <span class="json-string">"0.1.1"</span>,
+  <span class="json-key">"id"</span>: <span class="json-string">"550e8400-e29b-41d4-a716-446655440000"</span>,
+  <span class="json-key">"timestamp"</span>: <span class="json-number">1630000000000</span>
+}</code></pre>
+                </div>
+                
+                <h4>字段说明</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>字段名</th>
+                            <th>类型</th>
+                            <th>必填</th>
+                            <th>说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>type</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>消息类型</td>
+                        </tr>
+                        <tr>
+                            <td><code>ver</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>心跳包版本号</td>
+                        </tr>
+                        <tr>
+                            <td><code>id</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>心跳包唯一标识符</td>
+                        </tr>
+                        <tr>
+                            <td><code>timestamp</code></td>
+                            <td>number</td>
+                            <td>是</td>
+                            <td>心跳包发送时间戳</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h4>用途说明</h4>
+                <ul>
+                    <li>用于保持 WebSocket 连接活跃</li>
+                    <li>客户端可以通过心跳包检测连接是否正常</li>
+                    <li>每次心跳包的 <code>id</code> 都是唯一的，可用于追踪</li>
+                </ul>
+            </div>
+            
+            <div class="tab-content" id="pong-content">
+                <h3>Pong 消息（Pong响应）</h3>
+                <p><strong>触发时机：</strong>客户端发送 <code>ping</code> 消息时，服务端立即响应</p>
+                
+                <h4>消息格式</h4>
+                <div class="code-block">
+                    <pre><code>{
+  <span class="json-key">"type"</span>: <span class="json-string">"pong"</span>,
+  <span class="json-key">"timestamp"</span>: <span class="json-number">1630000000000</span>
+}</code></pre>
+                </div>
+                
+                <h4>字段说明</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>字段名</th>
+                            <th>类型</th>
+                            <th>必填</th>
+                            <th>说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>type</code></td>
+                            <td>string</td>
+                            <td>是</td>
+                            <td>消息类型，固定值 <code>"pong"</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>timestamp</code></td>
+                            <td>number</td>
+                            <td>是</td>
+                            <td>响应时间戳（毫秒），Unix 时间戳</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h4>客户端请求格式</h4>
+                <p>客户端发送的 <code>ping</code> 消息格式：</p>
+                <div class="code-block">
+                    <pre><code>{
+  <span class="json-key">"type"</span>: <span class="json-string">"ping"</span>
+}</code></pre>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="timestamp-content">
+                <h3>时间戳说明</h3>
+                <p>所有时间戳字段均为：</p>
+                
+                <div class="timestamp-info">
+                    <h4>单位</h4>
+                    <p>毫秒（milliseconds）</p>
+                    
+                    <h4>格式</h4>
+                    <p>Unix 时间戳（自 1970-01-01 00:00:00 UTC 起的毫秒数）</p>
+                    
+                    <h4>时区说明</h4>
+                    <ul>
+                        <li><code>report_time</code> 和 <code>origin_time</code> 字段：UTC+9 时区（日本标准时间）</li>
+                        <li>其他 <code>timestamp</code> 字段：服务器当前时间</li>
+                    </ul>
+                </div>
+                
+                <h4>时间戳字段分布</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>字段名</th>
+                            <th>消息类型</th>
+                            <th>说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>timestamp</code></td>
+                            <td>所有消息</td>
+                            <td>消息发送时间戳</td>
+                        </tr>
+                        <tr>
+                            <td><code>report_time</code></td>
+                            <td>Update</td>
+                            <td>报告时间，UTC+9 时区</td>
+                        </tr>
+                        <tr>
+                            <td><code>origin_time</code></td>
+                            <td>Update</td>
+                            <td>发震时间，UTC+9 时区</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>注意事项</h2>
+            <ul>
+                <li>无效路径会立即关闭连接</li>
+                <li>客户端需自行实现断线重连逻辑</li>
+                <li>数据格式与对应业务接口一致</li>
+                <li>长时间无操作建议主动发送心跳</li>
+                <li>数据来源: NIED日本防災科研所</li>
+                <li>更新规则: 收到新预警或更新后立即推送</li>
+            </ul>
+        </div>
+        
+        <footer>
+            <p>NIED WebSocket 数据推送服务文档 © 2025 </p>
+        </footer>
+    </div>
+    
+    <script>
+        // 标签切换功能
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // 移除所有标签和内容的激活状态
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                
+                // 激活当前标签和对应内容
+                tab.classList.add('active');
+                const tabId = tab.getAttribute('data-tab');
+                document.getElementById(`${tabId}-content`).classList.add('active');
+            });
+        });
+        
+        // 消息类型卡片点击功能
+        document.querySelectorAll('.message-type-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const type = card.getAttribute('data-type');
+                
+                // 移除所有标签的激活状态
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                
+                // 激活对应标签和内容
+                document.querySelector(`.tab[data-tab="${type}"]`).classList.add('active');
+                document.getElementById(`${type}-content`).classList.add('active');
+                
+                // 滚动到详细说明区域
+                document.querySelector('.section h2').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
