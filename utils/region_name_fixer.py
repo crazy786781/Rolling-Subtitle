@@ -45,9 +45,9 @@ class RegionNameFixer:
             
             # 根据数据源类型选择对应的JSON文件
             if self.source_type == 'sa':
-                json_file_path = base_path / "预警地名修正" / "sa_region_data.json"
+                json_file_path = base_path / "SA、KMA-EEW-Fe Fix" / "sa_region_data.json"
             elif self.source_type in ['kma', 'kma-eew']:
-                json_file_path = base_path / "预警地名修正" / "korea_region_data.json"
+                json_file_path = base_path / "SA、KMA-EEW-Fe Fix" / "korea_region_data.json"
             else:
                 logger.warning(f"不支持的数据源类型: {source_type}")
                 return

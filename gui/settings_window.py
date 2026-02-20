@@ -1400,9 +1400,12 @@ class SettingsWindow(QDialog):
                     os.close(fd)
                     # Windows 下 cmd 按系统 ANSI(如 GBK) 解析 .bat，用 gbk 写入以便中文路径正确
                     bat_encoding = "gbk" if os.name == "nt" else "utf-8"
+                    exe_dir = os.path.dirname(exe_path)
                     with open(bat_path, "w", encoding=bat_encoding) as f:
                         f.write("@echo off\n")
                         f.write("ping 127.0.0.1 -n 3 > nul\n")  # 约 2 秒延迟
+                        # 先切换到 exe 所在目录再启动，便于 onedir 下新进程正确找到同目录的 python313.dll 等
+                        f.write(f'cd /d "{exe_dir}"\n')
                         arg_str = " ".join(f'"{a}"' for a in args)
                         f.write(f'start "" "{exe_path}" {arg_str}\n')
                         f.write("del \"%~f0\"\n")  # 批处理删除自身
@@ -1413,9 +1416,13 @@ class SettingsWindow(QDialog):
                     )
                 except Exception as e:
                     logger.warning(f"批处理重启失败，改用延迟 Popen: {e}")
+                    exe_dir = os.path.dirname(exe_path)
                     def _delayed_start():
                         try:
-                            subprocess.Popen([exe_path] + sys.argv[1:])
+                            subprocess.Popen(
+                                [exe_path] + sys.argv[1:],
+                                cwd=exe_dir if exe_dir else None,
+                            )
                         except Exception as e2:
                             logger.error(f"延迟启动失败: {e2}")
                         QApplication.instance().quit()
